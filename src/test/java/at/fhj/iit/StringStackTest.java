@@ -39,7 +39,7 @@ public class StringStackTest {
   @Test
   @DisplayName("Test is not empty")
   public void testIsNotEmpty() {
-    sut.push("Rush Hour");
+    sut.push("Test merge conflict?");
     assertFalse(sut.isEmpty());
   }
 
