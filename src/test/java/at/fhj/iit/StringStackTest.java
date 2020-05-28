@@ -39,7 +39,9 @@ public class StringStackTest {
   @Test
   @DisplayName("Test is not empty")
   public void testIsNotEmpty() {
-    sut.push("Test merge conflict?");
+
+    sut.push("Blind Side");
+
     assertFalse(sut.isEmpty());
   }
 
