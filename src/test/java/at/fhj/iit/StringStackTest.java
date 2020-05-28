@@ -4,8 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class StringStackTest {
   public IStack sut;
@@ -46,11 +45,14 @@ public class StringStackTest {
    * - use isEmpty to check that's empty again
    * - assert every content of the stack in the correct ordering
    *
-   * TODO: add useful DisplayName
    */
   @Test
-  public void testPushPop() {
-    fail("please implement me...");
+  @DisplayName("Tests if push and pop works properly")
+  public void testPushPop() throws Exception{
+    sut.push("String 1");
+    sut.push("String 2");
+    assertEquals("String 2", sut.pop());
+
   }
 
   /**
