@@ -77,11 +77,13 @@ public class StringStackTest {
    * - use pop, as many times that it should throw an exception
    * - assert thrown exception
    *
-   * TODO: add useful DisplayName
    */
   @Test
+  @DisplayName("Tests if pop method throws IllegalStateException!")
   public void testPopException() {
-    fail("please implement me...");
+    assertThrows(IllegalStateException.class, () -> {
+      sut.pop();
+    });
   }
 
   // TODO: Feel Free to insert other test cases for the String Stack Implementation !!!
