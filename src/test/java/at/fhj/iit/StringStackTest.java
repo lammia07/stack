@@ -69,6 +69,7 @@ public class StringStackTest {
   @Test
   public void testPushException() {
     fail("please implement me...");
+    fail("A new line was added.");
   }
 
   /**
