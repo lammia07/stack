@@ -29,6 +29,8 @@ public class StringStackTest {
     assertTrue(sut.isEmpty());
   }
 
+  
+
   /**
    * tests if stack is empty after pushing
    * use assert
