@@ -4,8 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class StringStackTest {
   public IStack sut;
@@ -21,6 +20,9 @@ public class StringStackTest {
    * - assertTrue to check it's empty
    * TODO: add useful DisplayName
    */
+
+
+
   @Test
   @DisplayName("testIsEmpty")
   public void testIsEmpty() {
@@ -31,11 +33,12 @@ public class StringStackTest {
    * tests if stack is empty after pushing
    * use assert
    * - assertFalse to check it's not empty
-   * TODO: add useful DisplayName
    */
   @Test
+  @DisplayName("Test is not empty")
   public void testIsNotEmpty() {
-    fail("please implement me...");
+    sut.push("Rush Hour");
+    assertFalse(sut.isEmpty());
   }
 
   /**
@@ -51,6 +54,7 @@ public class StringStackTest {
   @Test
   public void testPushPop() {
     fail("please implement me...");
+
   }
 
   /**
