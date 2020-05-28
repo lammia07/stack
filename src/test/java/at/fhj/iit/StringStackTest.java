@@ -20,6 +20,9 @@ public class StringStackTest {
    * - assertTrue to check it's empty
    * TODO: add useful DisplayName
    */
+
+
+
   @Test
   @DisplayName("testIsEmpty")
   public void testIsEmpty() {
@@ -30,11 +33,12 @@ public class StringStackTest {
    * tests if stack is empty after pushing
    * use assert
    * - assertFalse to check it's not empty
-   * TODO: add useful DisplayName
    */
   @Test
+  @DisplayName("Test is not empty")
   public void testIsNotEmpty() {
-    fail("please implement me...");
+    sut.push("Rush Hour");
+    assertFalse(sut.isEmpty());
   }
 
   /**
@@ -52,7 +56,6 @@ public class StringStackTest {
     sut.push("String 1");
     sut.push("String 2");
     assertEquals("String 2", sut.pop());
-
   }
 
   /**
