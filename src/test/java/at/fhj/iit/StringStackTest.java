@@ -37,7 +37,7 @@ public class StringStackTest {
   @Test
   @DisplayName("Test is not empty")
   public void testIsNotEmpty() {
-    sut.push("Rush Hour");
+    sut.push("Blind Side");
     assertFalse(sut.isEmpty());
   }
 
